@@ -8,11 +8,12 @@ time:2016.8.13
 
 
 import time
-import requests
 import re
-from bs4 import BeautifulSoup
 from queue import Queue
 from threading import Thread
+
+import requests
+from bs4 import BeautifulSoup
 
 
 url_queue = Queue()
