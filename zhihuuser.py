@@ -89,7 +89,8 @@ class Zhihu:
                    "Origin":"https://www.zhihu.com/",
                    "Connection":"keep-alive",
                    # "Cookie":self.session
-                   }
+                   }  #设置为全局变量
+        time.sleep(4)
         while not url_queue.empty():
             url = url_queue.get()
             html = self.session.post(url,headers = headers)
